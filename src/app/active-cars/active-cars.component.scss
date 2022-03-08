@@ -1,0 +1,28 @@
+#active-cars {
+  min-height: 36.6rem;
+  background-color: rgb(77, 77, 15);
+  padding: 1rem 0;
+
+  .car-card {
+    margin: 2rem 10%;
+    background-color: yellow;
+    min-height: 15rem;
+    img {
+      float: left;
+      width: 50%;
+      max-width: 20rem;
+      height: auto;
+      margin: 1rem;
+    }
+    p {
+      padding: 1rem;
+    }
+    button {
+      margin: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: smaller;
+  }
+}

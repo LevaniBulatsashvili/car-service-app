@@ -1,0 +1,9 @@
+<div id="passed-cars">
+  <div *ngFor="let car of (passedCars | async).passedCars" class="car-card">
+    <img src="{{ car.img }}" alt="">
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, beatae. Fuga eius reiciendis nemo aliquam rem saepe velit ratione quisquam ullam sint sed quidem, necessitatibus inventore libero voluptatem suscipit accusantium.</p>
+      <button mat-raised-button color="primary" (click)="addToActive(car)">Return To active</button>
+    </div>
+  </div>
+</div>
