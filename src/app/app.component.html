@@ -1,3 +1,17 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div *ngIf="!popup">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+<div *ngIf="popup" class="popup">
+  <div class="overlay">
+    <div class="content">
+      <p>Are you sure you want to book this car?</p>
+      <div class="buttons">
+        <button mat-raised-button color="primary" (click)="acceptPopup()">confirm</button>
+        <button mat-raised-button color="primary" (click)="denyPopup()">deny</button>
+      </div>
+    </div>
+  </div>
+</div>
